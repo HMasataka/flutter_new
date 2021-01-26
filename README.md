@@ -4,13 +4,19 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+* [SDK](https://flutter.dev/docs/get-started/install/macos) をダウンロード
+* `unzip $HOME/flutter_macos_v1.9.1+hotfix.6-stable.zip`
+* `set -x PATH $PATH $HOME/flutter/bin`
+* `flutter precache`
 
-A few resources to get you started if this is your first Flutter project:
+* [xcode](https://apps.apple.com/us/app/xcode/id497799835)をインストール
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+* `brew install rbenv ruby-build`
+* `rbenv install -l`
+* `rbenv install 3.0.0`
+* `rbenv global 3.0.0`
+* `sudo gem install cocoapods`
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* `flutter create new_app`
+* `cd new_app`
+* `flutter run`
