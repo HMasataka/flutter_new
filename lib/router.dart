@@ -35,24 +35,28 @@ class _RouterWidget extends State<RouterWidget> {
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.business),
-            label: 'Business',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.school),
-            label: 'School',
-          ),
-        ],
+        items: _bottomNavigationBarItems(),
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.amber[800],
         onTap: _onItemTapped,
       ),
     );
   }
+}
+
+List<BottomNavigationBarItem> _bottomNavigationBarItems() {
+  return <BottomNavigationBarItem>[
+    BottomNavigationBarItem(
+      icon: Icon(Icons.home),
+      label: 'Home',
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.business),
+      label: 'Business',
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.school),
+      label: 'School',
+    ),
+  ];
 }
